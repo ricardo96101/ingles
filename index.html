@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script id="_wau1ca">var _wau = _wau || []; _wau.push(["dynamic", "veguetta", "1ca", "ffffffffffff", "small"]);</script>
+  <script async src="//waust.at/d.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Explore Our Private Gallery</title>
+  <title>Discover Our Private Gallery</title>
   <meta property="og:title" content="Private Gallery" />
   <meta property="og:image" content="https://i.postimg.cc/SQVxd77J/Vista-Uno-Sepia.png" />
-  <meta property="og:description" content="Access exclusive content. Adults only." />
+  <meta property="og:description" content="Access to exclusive content. Adults only." />
   <link rel="shortcut icon" href="https://cdn.jmpcdn.com/assets/3420/images/2.ico" type="image/x-icon" />
   <style>
-    /* Evitar selección y copia */
     body, .container {
-      -webkit-user-select: none; /* Safari */
-      -moz-user-select: none; /* Firefox */
-      -ms-user-select: none; /* IE10+/Edge */
-      user-select: none; /* Standard */
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
 
     body {
@@ -56,39 +57,23 @@
       background-color: #ff3366;
     }
   </style>
-  <script id="_wau1ca" async>
-    var _wau = _wau || [];
-    _wau.push(["track", "chimuve"]);
-    (function() {
-      var s = document.createElement("script");
-      s.src = "//waust.at/d.js";
-      s.async = true;
-      document.body.appendChild(s);
-    })();
-  </script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const button = document.getElementById('continueBtn');
       let clicked = false;
 
       button.addEventListener('click', function() {
-        if (clicked) return; // Previene dobles clics
+        if (clicked) return;
         clicked = true;
 
-        // Aquí el enlace protegido
-        const url = "https://searchfordating.com/tds/ae?tdsId=s2190pos_r&tds_campaign=s2190pos&s1=ps&utm_source=int&utm_sub=opnfnl&affid=1b48fff7&subid={ChimuVE}&subid2={subid2}&clickid={clickid}";
-
-        // Redirigir al enlace
+        const url = "https://searchfordating.com/tds/ae?tdsId=s2190pos_r&tds_campaign=s2190pos&s1=ps&utm_source=int&utm_sub=opnfnl&affid=1b48fff7&subid={Veguetta}&subid2={subid2}&clickid={clickid}";
         window.location.href = url;
       });
 
-      // Bloquear clic derecho (para evitar copiar enlace)
       document.addEventListener('contextmenu', event => event.preventDefault());
 
-      // Bloquear Ctrl+Click, Ctrl+U (ver código fuente), Ctrl+C (copiar)
       document.addEventListener('keydown', function(e) {
         if (e.ctrlKey) {
-          // Lista de teclas bloqueadas con Ctrl
           const blockedKeys = ['c', 'u', 's', 'p', 'a'];
           if (blockedKeys.includes(e.key.toLowerCase())) {
             e.preventDefault();
@@ -104,8 +89,8 @@
     <div class="logo">
       <img src="https://i.imgur.com/sZdtUEq.png" alt="Logo" />
     </div>
-    <h2>Do you want to access our private gallery?</h2>
-    <p>Exclusive content for adults only. Please confirm you are 18+ before continuing.</p>
+    <h2>Do you want access to our private gallery?</h2>
+    <p>Exclusive content for adults only. Please confirm that you are over 18 years old before continuing.</p>
     <button id="continueBtn">
       Yes, I want to continue
     </button>
